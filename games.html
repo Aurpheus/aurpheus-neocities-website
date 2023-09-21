@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aurpheus's pixel-art website</title>
+    <link rel = "icon" href = "pics/icon.gif"
+        type = "image/x-icon">
+    <link href="css/style.css" rel="stylesheet" type="text/css" media="all">
+    <style>
+      #clicker_pic {
+        margin: auto;
+        rotate:-10deg;
+        animation: mymove 5s infinite;
+      }
+
+      @keyframes mymove {
+        50% {transform: rotate(20deg);}
+      }
+    </style>
+
+  </head>
+  <body >
+    <header>
+    <a href="index.html">
+    <img src="pics/title.png" width="30%" >
+    </a>
+    </header>
+    <h1>
+      Changed clicker :3
+    </h1>
+
+      <div id="changed" style="height: 50%">
+        <img src="pics/snipeShot_idle.gif"  id="clicker_pic" width="10%" onclick="update_click()">
+      </div>
+    <p>
+
+      </br>
+      Clicks: <i id="sum">0 / 2000</i> |  Money: <i id="money">0</i>
+      </br>
+
+      Cards:
+      <div id="container">
+
+      </div>
+      <span>Upgrades Shop:</span>
+      <div id="upgrade_container">
+
+      </div>
+      </br>
+      <span> Current Effect: x<i id="x">1</i> | +<i id="+">0</i> </span>
+      <span> Time til ceasing effects : <i id="timer">0</i> s </span>
+
+    </p>
+
+    <div id="gooBalls"></div>
+    <footer>
+      <a href="https://transfur.social/@aurpheus"> <img src="pics/mast.png"> </a>
+      <a href="https://www.furaffinity.net/user/aurpheus/"> <img src="pics/icons.png"> </a>
+      </br>
+      Last Updated : 09/09/2023
+    </footer>
+    <script src="javascript/clicker.js"></script>
+  </body>
+</html>
