@@ -1,0 +1,75 @@
+/* CSS is how you can add style to your website, such as colors, fonts, and positioning of your
+   HTML content. To learn how to do something, just try searching Google for questions like
+   "how to change link color." */
+
+@import url('https://fonts.googleapis.com/css2?family=Pangolin&display=swap');
+
+body {
+  background-color: #222034;
+}
+
+*{
+  cursor: url(../pics/cursor_test.gif), auto;
+  font-size: 20px;
+  color: azure;
+  font-family: 'Pangolin', cursive;
+}
+
+.content{
+  height: 80%;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+}
+
+#all_content{
+  background-image: url("../pics/changed bg.png");
+  color: black;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+
+header {
+  font-size: 3em;
+  background-color: #222034;
+  border: 3px solid #222034
+  
+}
+
+
+footer {
+
+  background-color: #222034;
+}
+
+html{
+  margin: 0px !important
+}
+
+.test{
+  display: flex;
+}
+
+#card{
+  width: 8%;
+  background-color: #222034;
+  margin: 1%;
+  padding: 1em;
+}
+
+#container{
+  display: flex;
+  flex-direction: row;
+}
+
+#upgrade_container{
+  display: flex;
+  flex-direction: row;
+}
+
+span{
+  background-color: #222034;
+}

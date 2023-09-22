@@ -6,7 +6,7 @@
     <title>Aurpheus's pixel-art website</title>
     <link rel = "icon" href = "pics/icon.gif"
         type = "image/x-icon">
-    <link href="css/style.css" rel="stylesheet" type="text/css" media="all">
+    <link href="css/changed_style.css" rel="stylesheet" type="text/css" media="all">
     <style>
       #clicker_pic {
         margin: auto;
@@ -21,13 +21,15 @@
 
   </head>
   <body >
+  <div id="all_content">
     <header>
     <a href="index.html">
-    <img src="pics/title.png" width="30%" >
+    <img src="pics/title.png" width="30%" style="-webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);">
     </a>
     </header>
     <h1>
-      Changed clicker :3
+      <span> Changed clicker :3 </span>
     </h1>
 
       <div id="changed" style="height: 50%">
@@ -36,10 +38,10 @@
     <p>
 
       </br>
-      Clicks: <i id="sum">0 / 2000</i> |  Money: <i id="money">0</i>
+      <span>Clicks: <i id="sum">0 / 2000</i> |  Money: <i id="money">0</i> </span>
       </br>
 
-      Cards:
+      <span>Cards:</span>
       <div id="container">
 
       </div>
@@ -55,11 +57,14 @@
 
     <div id="gooBalls"></div>
     <footer>
-      <a href="https://transfur.social/@aurpheus"> <img src="pics/mast.png"> </a>
-      <a href="https://www.furaffinity.net/user/aurpheus/"> <img src="pics/icons.png"> </a>
+      <a href="https://transfur.social/@aurpheus"> <img src="pics/mast.png" style="-webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);"> </a>
+      <a href="https://www.furaffinity.net/user/aurpheus/"> <img src="pics/icons.png" style="-webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);"> </a>
       </br>
       Last Updated : 09/09/2023
     </footer>
     <script src="javascript/clicker.js"></script>
+  </div>
   </body>
 </html>
