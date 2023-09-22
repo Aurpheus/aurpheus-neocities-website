@@ -3,7 +3,7 @@ const button = document.getElementsByClassName("test");
 
 let clicks = 0
 const pictures = [
-    "pics/poisonFang_Attack.gif"
+    "pics/clickerpics/whitegoowolf.gif"
 ]
 
 const upgrades = [
