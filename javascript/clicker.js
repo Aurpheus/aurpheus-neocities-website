@@ -3,7 +3,8 @@ const button = document.getElementsByClassName("test");
 
 let clicks = 0
 const pictures = [
-    "pics/clickerpics/whitegoowolf.gif"
+    "pics/clickerpics/whitegoowolf.gif",
+    "pics/clickerpics/snekgoo.gif"
 ]
 
 const upgrades = [
@@ -26,7 +27,6 @@ const upgrades = [
 ]
 
 
-let i = 0
 let cards= []
 let current_m = 1
 let current_a = 0
@@ -40,6 +40,7 @@ let base_autoclick = 2000;
 let pw = 0;
 
 if (!initialized){
+    i_pic = 0
     updateUpgrades()
     initialized = true
 }
@@ -76,7 +77,7 @@ function buyUpgrade(upgrade){
         upgrades[upgrade+1]["selectable"] = true
         upgrades[upgrade]["selectable"] = false
         const m = document.getElementById("money");
-        console.log(m)
+       // console.log(m)
         m.innerHTML = money.toString();
         updateUpgrades()
         pw++;
@@ -90,18 +91,20 @@ function update_click(){
     clicks += (current_a+1)*current_m;
     money += (current_a+1)*current_m
     const elem = document.getElementById("sum");
-    console.log(elem)
+   // console.log(elem)
     elem.innerHTML = clicks.toString() + " / " + 2000 * Math.pow(2,next_pallier);
     const m = document.getElementById("money");
-    console.log(m)
     m.innerHTML = money.toString();
     if(clicks > 2000 * Math.pow(2,next_pallier)){
         next_pallier += 1
-        if (pictures.length < i-1){
-            i++
-        }
+        console.log("i: ",getI())
+        console.log("picture :",pictures[getI()])
         const elem = document.getElementById("clicker_pic");
-        elem.src = pictures[i]
+        elem.src = pictures[getI()]
+        if (pictures.length > getI()+1){
+            console.log("setting",getI()+1)
+            setI(getI()+1)
+        }
     }
 }
 
@@ -157,7 +160,7 @@ function get_card(){
     }
     cards = cards.concat([card])
     add_html_cards()
-    console.log(cards)
+    //console.log(cards)
 }
 
 function add_html_cards(){
@@ -189,7 +192,7 @@ function use_card(index){
     if (index > -1) { // only splice array when item is found
         cards.splice(index, 1); // 2nd parameter means remove one item only
     }
-    console.log(cards)
+    //console.log(cards)
     add_html_cards()
     update_interface()
 }
@@ -231,6 +234,19 @@ function autoclick(){
 
 function getPw(){
     return pw
+}
+
+function getI(){
+    const id = document.getElementById("current_pic");
+    console.log(id.innerText)
+    return parseInt(id.innerText)
+}
+
+function setI(value){
+    console.log("setI",value)
+    let elem = document.getElementById("current_pic");
+    elem.innerHTML = value
+    console.log("Changed element:",elem)
 }
 
 //check out how to set up intervan
