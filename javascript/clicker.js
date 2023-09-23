@@ -107,12 +107,12 @@ function update_click(){
 
 document.getElementById("clicker_pic").onclick = userClicked
 
-function userClicked(event) {
+function userClicked() {
     update_click()
     let image = document.createElement("img")
     image.src = "pics/splash_3x.gif"
     image.id ="gooBall" + goono
-    image.onclick = update_click
+    image.onclick = userClicked
 
     let gooBalls = document.getElementById("gooBalls").appendChild(image)
     let x = event.clientX;
@@ -128,6 +128,8 @@ function userClicked(event) {
         snowball.remove()
     },720)
 }
+
+document.getElementById('clicker_pic').ondragstart = function() { return false; };
 
 
 
