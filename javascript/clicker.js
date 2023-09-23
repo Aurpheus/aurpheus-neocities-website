@@ -130,6 +130,7 @@ function userClicked() {
 }
 
 document.getElementById('clicker_pic').ondragstart = function() { return false; };
+document.getElementById('gooBalls').ondragstart = function() { return false; };
 
 
 
