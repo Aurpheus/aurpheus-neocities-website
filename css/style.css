@@ -67,3 +67,44 @@ html{
   display: flex;
   flex-direction: row;
 }
+
+.char_header{
+  display: flex;
+  flex-direction: column;
+  background-color: darkslategrey;
+  padding: 1em;
+
+}
+
+.char_pic{
+
+  text-align: left;
+  width: 7em;
+  padding: 0.5em;
+  background-color: #222034;
+  flex-grow: 1;
+}
+.parent {
+  margin: 1rem;
+  text-align: left;
+}
+.child {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.char_desc {
+  margin-left: 0.5em;
+
+  margin-right: 0.5em;
+  padding: 0.5em;
+  background-color: #222034;
+  width: 70%;
+}
+
+.main_desc{
+  text-align: center;
+  padding: 0.5em;
+  background-color: #222034;
+
+}

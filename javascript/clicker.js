@@ -4,7 +4,8 @@ const button = document.getElementsByClassName("test");
 let clicks = 0
 const pictures = [
     "pics/clickerpics/whitegoowolf.gif",
-    "pics/clickerpics/snekgoo.gif"
+    "pics/clickerpics/snekgoo.gif",
+    "pics/clickerpics/drK.gif"
 ]
 
 const upgrades = [
