@@ -27,3 +27,18 @@ input{
   background-color: #222034;
   border: solid #99e550;
 }
+
+.horror{
+  background-image: url("../pics/horror_sprite_site1.svg");
+  background-repeat: no-repeat;
+  background-size:  cover;
+  height: 20em;
+}
+
+.death{
+  background-image: url("../pics/horror_sprite_site2.svg");
+  background-repeat: no-repeat;
+  background-size:  cover;
+  height: 20em;
+}
+
