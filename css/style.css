@@ -108,3 +108,7 @@ html{
   background-color: #222034;
 
 }
+
+.secret:hover{
+  background-color: black;
+}
